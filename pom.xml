@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.sonarsource.parent</groupId>
     <artifactId>parent</artifactId>
-    <version>40</version>
+    <version>41</version>
     <relativePath />
   </parent>
 
@@ -13,7 +13,7 @@
   <artifactId>sonar-github-plugin</artifactId>
   <name>SonarQube :: GitHub Plugin</name>
   <packaging>sonar-plugin</packaging>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.4.2-SNAPSHOT</version>
   <description>Provide some integration between GitHub and SonarQube</description>
   <url>http://redirect.sonarsource.com/plugins/github.html</url>
   <inceptionYear>2015</inceptionYear>
@@ -90,7 +90,7 @@
     <dependency>
       <groupId>org.kohsuke</groupId>
       <artifactId>github-api</artifactId>
-      <version>1.76</version>
+      <version>1.90</version>
     </dependency>
     <!-- Override version used by GitHub API -->
     <dependency>

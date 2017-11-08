@@ -19,6 +19,7 @@
  */
 package org.sonar.plugins.github;
 
+import java.net.URL;
 import java.util.Locale;
 import javax.annotation.Nullable;
 
@@ -161,7 +162,7 @@ public class GlobalReport {
     }
   }
 
-  public void process(PostJobIssue issue, @Nullable String gitHubUrl, boolean reportedOnDiff) {
+  public void process(PostJobIssue issue, @Nullable URL gitHubUrl, boolean reportedOnDiff) {
     increment(issue.severity());
     if (!reportedOnDiff) {
       if (extraIssueCount < maxGlobalReportedIssues) {
