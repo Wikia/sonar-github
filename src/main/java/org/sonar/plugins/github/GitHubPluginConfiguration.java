@@ -1,6 +1,6 @@
 /*
  * SonarQube :: GitHub Plugin
- * Copyright (C) 2015-2017 SonarSource SA
+ * Copyright (C) 2015-2018 SonarSource SA
  * mailto:info AT sonarsource DOT com
  *
  * This program is free software; you can redistribute it and/or
@@ -32,6 +32,7 @@ import javax.annotation.Nullable;
 import org.sonar.api.CoreProperties;
 import org.sonar.api.batch.BatchSide;
 import org.sonar.api.batch.InstantiationStrategy;
+import org.sonar.api.batch.ScannerSide;
 import org.sonar.api.config.Settings;
 import org.sonar.api.utils.MessageException;
 import org.sonar.api.utils.System2;
@@ -40,7 +41,7 @@ import org.sonar.api.utils.log.Loggers;
 
 import static org.apache.commons.lang.StringUtils.isNotBlank;
 
-@BatchSide
+@ScannerSide
 @InstantiationStrategy(InstantiationStrategy.PER_BATCH)
 public class GitHubPluginConfiguration {
 

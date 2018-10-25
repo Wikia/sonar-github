@@ -1,6 +1,6 @@
 /*
  * SonarQube :: GitHub Plugin
- * Copyright (C) 2015-2017 SonarSource SA
+ * Copyright (C) 2015-2018 SonarSource SA
  * mailto:info AT sonarsource DOT com
  *
  * This program is free software; you can redistribute it and/or
@@ -48,6 +48,7 @@ import org.kohsuke.github.GitHub;
 import org.kohsuke.github.GitHubBuilder;
 import org.sonar.api.batch.BatchSide;
 import org.sonar.api.batch.InstantiationStrategy;
+import org.sonar.api.batch.ScannerSide;
 import org.sonar.api.batch.fs.InputComponent;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.fs.InputPath;
@@ -59,7 +60,7 @@ import org.sonar.api.utils.log.Loggers;
 /**
  * Facade for all WS interaction with GitHub.
  */
-@BatchSide
+@ScannerSide
 @InstantiationStrategy(InstantiationStrategy.PER_BATCH)
 public class PullRequestFacade {
 
